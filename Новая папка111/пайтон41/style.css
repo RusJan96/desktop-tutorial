@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+section{
+  display: flex;
+  justify-content: center;
+  padding: 0 3.75em;
+}
+section  .content-wrapper {
+  max-width: 700px;}
+
+section .content-wrapper > * {
+  margin-bottom: 32px;
+}
+
+ section .content-wrapper .btn {
+  text-decoration: none ;
+  padding: 12px 24px;
+   border-radius: 2px;
+ }
+ section .content-wrapper a.btn {
+  display:inline-block;
+
+ }
+ .widht{
+  background-color: white;
+  color:black; 
+}
+
+
+section.blue {
+  background: #1B54DD; /* фон */
+  color: white;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top:  2em ;
+}
+
+.title {
+  font-size: 36px; /* размер шрифта */
+  font-weight: 700; /* жирность текста (можно 700) */
+}
+.promo-text {
+  font-size: 18pt; /* размер шрифта */
+  font-weight: 700;
+
+}
+.text2 {
+  font-size: 14px; /* размер шрифта */
+  font-weight: 400;
+}
+.img-our-team{
+  width: 100%;
+}
+
+ .content-wrapper .card-wrapper {
+   display: flex;
+
+ }
+ .card-wrapper img {
+    margin-right: 2em;
+  }
+ .card-wrapper .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .card-wrapper .text-wrapper a {
+   display: inline-block;
+    color: #1B54DD;
+     text-decoration: none;
+ }
+
+.card-wrapper .text-wrapper > *{
+  margin-bottom: 1em;
+}
+.card-wrapper .text-wrapper > *:last-child{
+  margin-bottom: 0;
+}
+
+  .blue2{
+    background-color: blue;
+    color:white; 
+    padding: 12px 24px;
+    margin: 24px;
+    text-decoration: none ;
+    
+}

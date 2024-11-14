@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh ;
+    padding: 50px;
+    box-sizing: border-box;
+    font-family:Colibri;
+    
+
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: justify;
+}
+.wrapper h1 {
+    overflow-wrap: anywhere;
+}
+.wrapper h1 span.green{
+    color: darkgreen;
+}
+.wrapper h1 span.red{
+    color: red;
+}
+
+.wrapper h1 span.backgroun-red {
+    color: red;
+}
+
+
+
+
+
+.wrapper h1 span.cursor {
+    text-decoration: underline;
+}
