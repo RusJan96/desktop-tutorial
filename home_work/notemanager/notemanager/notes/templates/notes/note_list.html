@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список Заметок</title>
+</head>
+<body>
+    <h1>Заметки</h1>
+    <ul>
+        {% for note in notes %}
+            <li>
+                <strong>{{ note.title }}</strong> — {{ note.content }} 
+                <a href="{% url 'delete_note' note.id %}">Удалить</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Добавить новую заметку</h2>
+    <form method="POST" action="{% url 'add_note' %}">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Заголовок" required>
+        <textarea name="content" placeholder="Содержимое" required></textarea>
+        <button type="submit">Добавить</button>
+    </form>
+</body>
+</html>

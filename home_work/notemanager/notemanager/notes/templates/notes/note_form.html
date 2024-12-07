@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавить Заметку</title>
+</head>
+<body>
+    <h1>Добавить Заметку</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Заголовок" required>
+        <textarea name="content" placeholder="Содержимое" required></textarea>
+        <button type="submit">Добавить</button>
+    </form>
+    <a href="{% url 'note_list' %}">Назад к списку заметок</a>
+</body>
+</html>
