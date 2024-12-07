@@ -1,0 +1,16 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Requests List</title>
+</head>
+<body>
+    <h1>Requests List</h1>
+    <ul>
+        {% for request in requests %}
+            <li>{{ request.name }} - {{ request.email }} - {{ request.submitted_at }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'create_request' %}">Leave a new request</a>
+</body>
+</html>
